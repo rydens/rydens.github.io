@@ -1,4 +1,4 @@
-var myName = "Hi, Rob!";
+var myName = "Hi, World!";
 
 var red = [0, 100, 63];
 var orange = [40, 100, 60];
