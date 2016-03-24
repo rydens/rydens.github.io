@@ -1,4 +1,5 @@
 #!/bin/sh
 
 git add -A
-git cvo
+git commit -a -m save
+git push
