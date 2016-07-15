@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Hi Program</title>
+    <style>
+      body {
+  background: teal;
+  color: #08d22e;
+  font-family: "Comic Sans MS"
+}
+
+.answer {
+  background: white;
+  height: 30px;
+  width: 200px;
+  color: #3A3938;
+}
+
+.button {
+  color: black;
+  height: 25px;
+  width: 45px;
+  background: red;
+  margin: 10px;
+}
+
+.nice {
+  font-size: large;
+}
+
+.name {
+  color: violet;
+}
+    </style>
+    <script>
+      function printGreeting() {
+  document.querySelector(".name").innerText = document.querySelector(".answer").innerText
+}
+    </script>
+  </head>
+  <body>
+    <h2>Hi, what's your name?</h2>
+    <div class="answer" contenteditable="true">
+    </div>
+    <div class="button" onClick="printGreeting()">Enter
+    </div>
+    <span class="nice">Nice to meet you, <span class="name">???</span>.</span>
+  </body>
+</html>
