@@ -8,7 +8,7 @@
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
     <meta property="og:type" content="website"/>
-    <title>OgarUnlimited.io</title>
+    <title>SkilGario</title>
     <link id="fav" rel="icon" type="image/png" href="ogaru.png"/>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css">
@@ -18,11 +18,14 @@
     <script type="text/javascript" src="http://play.ogarul.tk/legitsoulja.js?33"></script>
     <script src="main_out.js?22550"></script>
     <script>
-    	function connectToServer() {
-          var defaultserv = "ws://192.241.173.143:443"
-
-            connect(defaultserv, true);
-        }
+    	$(document).ready(function() {
+    	    function getConnection() {
+    	        var connectionfail = false;
+    	        var request = prompt("Just hit okay; if you can't connect, try 'wss' instead of 'ws'", "ws://192.241.173.143:443");
+    	        if (request != null) {
+    	            connect(request, true);
+    	        }
+    	    }
     	    var $_GET = {};
     	    document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function() {function decode(s) {return decodeURIComponent(s.split("+").join(" "));}$_GET[decode(arguments[1])] = decode(arguments[2]);});
     	    var method;
@@ -49,12 +52,12 @@
               <form role="form">
                   <div class="form-group">
                       <div style="float: left; margin-left: 20px;">
-                          <h2 id="titleh">OgarUnlimited.io</h2>
+                          <h2 id="titleh">SkilStak Server</h2>
                       </div>
                       <div class="fb-like" data-action="like" data-href="https://www.facebook.com/playagar.io" data-layout="button" data-share="true" data-show-faces="true" style=
                       "float: right; margin-top: 30px;"></div><br clear="both">
                       <div style="margin-left: 55px">
-                          <a href="https://github.com/AJS-development/Ogar-unlimited">Ogar Unlimited - Github</a>
+                          <a href="https://skilstak.io">SkilStak Coding Arts</a>
                       </div>
                   </div>
                   <div class="form-group">
