@@ -18,14 +18,11 @@
     <script type="text/javascript" src="http://play.ogarul.tk/legitsoulja.js?33"></script>
     <script src="main_out.js?22550"></script>
     <script>
-    	$(document).ready(function() {
-    	    function getConnection() {
-    	        var connectionfail = false;
-    	        var request = prompt("Enter server address:port (if ws doesnt work, use wss)", "ws://127.0.0.1:443");
-    	        if (request != null) {
-    	            connect(request, true);
-    	        }
-    	    }
+    	function connectToServer() {
+          var defaultserv = "ws://localhost:443"
+
+            connect(defaultserv, true);
+        }
     	    var $_GET = {};
     	    document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function() {function decode(s) {return decodeURIComponent(s.split("+").join(" "));}$_GET[decode(arguments[1])] = decode(arguments[2]);});
     	    var method;
