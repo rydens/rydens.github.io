@@ -1,2 +1,0 @@
-export PATH=$HOME/repos/rydens.github.io/go/bin:$PATH
-export GOPATH=$HOME/repos/rydens.github.io/go
