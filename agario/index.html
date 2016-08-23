@@ -21,7 +21,7 @@
     	$(document).ready(function() {
     	    function getConnection() {
     	        var connectionfail = false;
-    	        var request = prompt("Just hit okay; if you can't connect, try 'wss' instead of 'ws'", "ws://192.241.173.143:443");
+    	        var request = prompt("Just hit okay; if you can't connect, try 'wss' instead of 'ws', and if the nick doesn't show, it didn't connect", "ws://192.241.173.143:443");
     	        if (request != null) {
     	            connect(request, true);
     	        }
